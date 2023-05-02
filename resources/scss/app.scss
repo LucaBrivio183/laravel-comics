@@ -4,3 +4,53 @@
 @import "partials/reset";
 @import "partials/typography";
 @import "partials/variables";
+
+header {
+    .header-top {
+        background-color: $primary-color;
+
+        a {
+            color: $text-color;
+        }
+    }
+
+    .logo-box {
+        width: $logo-square-width;
+        height: $logo-square-width;
+        overflow: hidden;
+
+        img {
+            max-width: 100%;
+            display: block;
+            object-fit: center;
+        }
+    }
+
+    nav {
+        a {
+            color: $tertiary-color;
+
+            &:hover {
+                color: $primary-color;
+                border-bottom: 5px solid $primary-color;
+            }
+        }
+    }
+}
+
+
+
+main {
+    #jumbotron {
+        height: 25rem;
+        background-image: url(../img/jumbotron.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 0%;
+    }
+
+    #comics {
+        background-color: $secondary-color;
+        padding: 20px 0;
+    }
+}
