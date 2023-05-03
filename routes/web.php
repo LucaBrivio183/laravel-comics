@@ -13,10 +13,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/comics', function () {
     $data = [
         'comics' => config('comics'),
-        'socials' => config('socials')
     ];
-    return view('home', $data);
-});
+    return view('comics', $data);
+})->name('comics');
+
+Route::get('/series/{index}', function ($index) {
+    $data = [
+        'comics' => config('comics')[$index],
+    ];
+    return view('series', $data);
+})->name('series')->where('index', '[0-9]+');

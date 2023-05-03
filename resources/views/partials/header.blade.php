@@ -14,7 +14,7 @@
             </div>
             <nav class="d-flex w-100 justify-content-between">
                 <a class="d-flex align-items-center px-2" href="">CHARACTERS</a>
-                <a class="d-flex align-items-center px-2" href="">COMICS</a>
+                <a class="d-flex align-items-center px-2" href="{{route('comics')}}">COMICS</a>
                 <a class="d-flex align-items-center px-2" href="">MOVIES</a>
                 <a class="d-flex align-items-center px-2" href="">TV</a>
                 <a class="d-flex align-items-center px-2" href="">GAMES</a>

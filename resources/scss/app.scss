@@ -52,6 +52,11 @@ main {
     #comics {
         background-color: $secondary-color;
         padding: 20px 0;
+
+        h5 {
+            color: $text-color;
+            font-size: 1.25rem;
+        }
     }
 }
 
