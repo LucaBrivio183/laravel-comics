@@ -54,3 +54,43 @@ main {
         padding: 20px 0;
     }
 }
+
+footer {
+    .footer-top {
+        overflow: hidden;
+        background-image: url(../img/footer-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+
+        img {
+            position: absolute;
+            right: 0;
+            top: -150px;
+            z-index: 1;
+        }
+    }
+
+    h3 {
+        color: $text-color;
+    }
+
+    a {
+        color: $text-color;
+        opacity: 0.6;
+        font-size: .75rem;
+
+        &:hover {
+            opacity: 1;
+
+        }
+    }
+}
+
+.footer-bottom {
+    background-color: $secondary-color;
+
+    span {
+        color: $primary-color;
+    }
+}
